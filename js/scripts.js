@@ -26,12 +26,7 @@ createApp({
 
             ],
 
-            newTodo: {
-
-                text: '',
-                done: true
-
-            },
+            newTodo: '',
 
         };
 
@@ -47,9 +42,16 @@ createApp({
 
         addTodo() {
 
-            this.todoList.push(this.newTodo);
+            const myNewTodo = {
 
-            // this.newTodo.text = '';
+                text: this.newTodo,
+                done: false
+
+            }
+
+            this.todoList.push(myNewTodo);
+
+            this.newTodo = '';
 
         }
 
