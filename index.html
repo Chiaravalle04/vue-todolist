@@ -26,6 +26,16 @@
 
             </div>
 
+            <div class="add-todo-button">
+
+                <input type="text" placeholder="Nuova Task..." v-model="newTodo.text">
+
+                <button @click="addTodo()">Aggiungi</button>
+
+                {{ newTodo.text }}
+
+            </div>
+
             <main> <!--Inizio Main-->    
 
                 <div class="todo">

@@ -24,7 +24,14 @@ createApp({
                     done: false
                 },
 
-            ]
+            ],
+
+            newTodo: {
+
+                text: '',
+                done: true
+
+            },
 
         };
 
@@ -35,6 +42,14 @@ createApp({
         removeTodo(i) {
 
             this.todoList.splice(i, 1);
+
+        },
+
+        addTodo() {
+
+            this.todoList.push(this.newTodo);
+
+            // this.newTodo.text = '';
 
         }
 

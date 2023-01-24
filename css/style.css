@@ -35,9 +35,37 @@ i {
     width: 25%;
 }
 
+.add-todo-button {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.add-todo-button input {
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.add-todo-button button {
+    display: inline-block;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.add-todo-button button:hover {
+    scale: 1.1;
+}
+
 /* Main */
 main {
-    padding-top: 50px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
 }
