@@ -8,5 +8,44 @@
 /* Font */
 
 /* Regole Generali */
+ul {
+    list-style: none;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.main-logo img {
+    width: 25%;
+}
 
 /* Main */
+main {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.todo {
+    width: 70%;
+    padding: 40px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.todo ul li {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px 0;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.43);
+}

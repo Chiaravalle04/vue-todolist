@@ -19,9 +19,27 @@
 
         <div id="app">
             
-            <main> <!--Inizio Main-->
-                
+            <div class="main-logo">
 
+                <img src="img/logo.png" alt="">
+
+            </div>
+
+            <main> <!--Inizio Main-->    
+
+                <div class="todo">
+
+                    <ul>
+
+                        <li v-for="(item, index) in todoList" :class="{ 'line-through': todoList[index].done == true }">
+                            
+                            {{ todoList[index].text }}
+                        
+                        </li>
+
+                    </ul>
+
+                </div>
                 
             </main> <!--Fine Main-->
             
