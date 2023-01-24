@@ -28,7 +28,7 @@
 
             <div class="add-todo-button">
 
-                <input type="text" placeholder="Nuova Task..." v-model="newTodo">
+                <input type="text" placeholder="Nuova Task..." v-model="newTodo" @keyup.enter="addTodo()">
 
                 <button @click="addTodo()">Aggiungi</button>
 
