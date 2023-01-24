@@ -6,8 +6,15 @@
 }
 
 /* Font */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* Regole Generali */
+body {
+    background-color: #EEF1EF;
+}
+
 ul {
     list-style: none;
 }
@@ -48,6 +55,11 @@ i {
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
+    border: none;
+}
+
+.add-todo-button input:focus {
+    outline-color: #00E165;
 }
 
 .add-todo-button button {
@@ -57,10 +69,20 @@ i {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    background-color: #00E165;
+    font-weight: bold;
+    color: #fff;
+    border: none;
 }
 
 .add-todo-button button:hover {
     scale: 1.1;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Main */
@@ -73,7 +95,7 @@ main {
 .todo {
     width: 70%;
     padding: 40px;
-    background-color: grey;
+    background-color: #001533;
     border-radius: 20px;
 }
 
@@ -82,8 +104,11 @@ main {
     padding: 20px;
     border-radius: 20px;
     margin: 5px 0;
-    background-color: antiquewhite;
+    color: #fff;
+    font-weight: bold;
+    background-color: #00E165;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.43);
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }

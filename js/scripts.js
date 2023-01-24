@@ -16,11 +16,11 @@ createApp({
 
                 {
                     text: 'Seguire webinar sul web 3',
-                    done: true
+                    done: false
                 },
 
                 {
-                    text: 'Comprare 2 bottiglie di acqua',
+                    text: 'Fare la spesa',
                     done: false
                 },
 
@@ -56,6 +56,20 @@ createApp({
                 this.newTodo = '';
 
             }
+
+        },
+
+        completedTodo(i) {
+
+            if (this.todoList[i].done == false) {
+
+                this.todoList[i].done = true;
+
+            } else {
+
+                this.todoList[i].done = false;
+
+            };
 
         }
 
