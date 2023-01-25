@@ -47,7 +47,7 @@
                             
                             {{ todoList[index].text }}
 
-                            <span class="text-none"><i class="fa-solid fa-xmark" @click="removeTodo(index)"></i></span>
+                            <span class="text-none"><i class="fa-solid fa-xmark" @click.stop="removeTodo(index)"></i></span>
                         
                         </li>
 
